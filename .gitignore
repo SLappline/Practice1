@@ -1,0 +1,21 @@
+#2.1
+#Игнорируем все что внутри папки build
+build/**
+#Игнорируем все файлы .jar
+*.jar
+#Исключаем игнорирование файла module2.jar
+!module2.jar
+#Игнорируем файла application-local.properties
+application-local.properties
+#Игнорируем папку .idea
+.idea
+#Игнорируем папку .idea_copy
+.idea_copy/**
+#Исключаем игнорирование файла workspace.xml
+!.idea_copy/workspace.xml
+
+#2.2
+#Исключаем все папки build, но не файлы с именем build. Файлы с именем
+#"build" не должны игнорироваться. Добавить пояснение: "файл module2.jar
+#из п 2.1.b по-прежнему не должен игнорироваться"/
+/build
